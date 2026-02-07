@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO site_settings (`key`, value) VALUES ('trial_period_text', '100 Night Better Sleep') ON DUPLICATE KEY UPDATE value = '100 Night Better Sleep';\nINSERT INTO site_settings (`key`, value) VALUES ('guarantee_text', '100-Night Guarantee') ON DUPLICATE KEY UPDATE value = '100-Night Guarantee';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute INSERT INTO site_settings (`key`, value) VALUES ('trial_period_text', '100 Night Better Sleep') ON DUPLICATE KEY UPDATE value = '100 Night Better Sleep';\nINSERT INTO site_settings (`key`, value) VALUES ('guarantee_text', '100-Night Guarantee') ON DUPLICATE KEY UPDATE value = '100-Night Guarantee';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 87
+}

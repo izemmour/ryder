@@ -1,0 +1,301 @@
+/**
+ * Mother's Day "Thoughtful Gift" Landing Page Configuration
+ * 
+ * Focus: Honoring mom with a gift of comfort and care she truly deserves.
+ * Target: Gift-givers who want to show appreciation for mom's endless care.
+ */
+
+import type { LandingPageConfig } from './types';
+import { baseConfig } from './base.config';
+
+export const mothersDayConfig: LandingPageConfig = {
+  ...baseConfig,
+  
+  // Metadata
+  id: 'mothers-day',
+  name: 'Mother\'s Day Gift',
+  slug: 'mothers-day-gift',
+  category: 'event',
+  seo: {
+    title: 'The Perfect Mother\'s Day Gift | FluffCo Pillow - Give Mom Better Sleep',
+    description: 'Give mom the gift of better sleep this Mother\'s Day. A thoughtful, practical luxury she\'ll enjoy every night. Premium gift-ready packaging included.',
+    keywords: ['mothers day gift', 'gift for mom', 'thoughtful gift', 'pillow gift', 'luxury gift', 'practical gift for mom'],
+  },
+  
+  // Global settings - Soft, warm rose palette
+  theme: 'light',
+  primaryColor: '#d4a5a5', // Dusty rose
+  accentColor: '#1a1a1a',
+  
+  // Section visibility and order - Gift-focused flow
+  sections: [
+    'hero',
+    'benefits',
+    'sleeper-types',
+    'the-difference',
+    'sleep-experts',
+    'technology',
+    'fluffco-secret',
+    'features-grid',
+    'testimonials',
+    'pricing',
+    'faq',
+  ],
+  
+  // Announcement Bar - Mother's Day themed
+  announcementBar: {
+    text: 'Mother\'s Day: Up to 66% Off',
+    showTimer: true,
+    ctaText: 'Shop for Mom →',
+    ctaTarget: 'pricing',
+  },
+  
+  // Header
+  header: {
+    navItems: [
+      { id: 'benefits', label: 'Why Mom Will Love It' },
+      { id: 'the-difference', label: 'The Difference' },
+      { id: 'technology', label: 'Quality' },
+      { id: 'testimonials', label: 'Happy Moms' },
+      { id: 'faq', label: 'FAQ' },
+    ],
+    ctaText: 'Gift Mom →',
+  },
+  
+  // Hero Section - Mom-focused messaging
+  // Main headline uses default for consistency; eventHeadline shows on gallery image 1
+  hero: {
+    headline: 'The Pillow That Holds Its Shape. Night After Night.',
+    subheadline: 'She\'s always taking care of everyone else. This Mother\'s Day, give her the gift of hotel-quality sleep, a thoughtful luxury she\'ll enjoy every single night.',
+    eventHeadline: 'Give Mom the\nRest She Deserves.',
+    trustBadge: {
+      reviewCount: '546,000+',
+      rating: '95/100',
+      source: 'PureWow',
+    },
+    usps: [
+      { icon: 'support', title: 'Gift-Ready Packaging', description: 'No wrapping needed' },
+      { icon: 'shield', title: 'Award-Winning Quality', description: 'Oprah Daily recognized' },
+      { icon: 'clock', title: 'Enjoyed Every Night', description: 'A gift she\'ll actually use' },
+      { icon: 'location', title: 'Made in USA', description: 'Premium materials' },
+    ],
+    showOekoTexBadge: true,
+    showOprahBadge: true,
+    show30NightsBadge: true,
+  },
+  
+  // Gallery - Uses custom Mother's Day images for slots 1 and 2, standard for rest
+  gallery: {
+    // Custom Mother's Day images for hero and tips slots
+    // Standard images for layers, comparison, care, hotel, hotel-comparison
+    images: [
+      { src: '/images/optimized/events/mothers-day-hero-pillow.png', alt: 'FluffCo Pillow - Mother\'s Day', type: 'image' },
+      { src: '/images/optimized/events/mothers-day-comfort.png', alt: 'Better Sleep for Mom', type: 'image', badges: [{ type: 'text', position: 'bottom-left', content: '3 tips' }] },
+      { src: '/images/optimized/benefits/engineering-detail-new.png', alt: '3-Layer Construction', type: 'image', badges: [{ type: 'text', position: 'bottom-left', content: '3 layers' }] },
+      { src: '', alt: 'Comparison', type: 'comparison' },
+      { src: '/images/optimized/benefits/washing-machine.png', alt: 'Easy Care', type: 'image', badges: [{ type: 'text', position: 'bottom-left', content: '3 care' }] },
+      { src: '/images/optimized/benefits/hotel-comfort-packaging.png', alt: 'Hotel Comfort', type: 'image', badges: [{ type: 'text', position: 'bottom-left', content: 'hotel' }] },
+      { src: '', alt: 'Hotel Comparison', type: 'hotel-comparison' },
+    ],
+    // Customized overlay text for Mother's Day angle
+    slotOverrides: {
+      tips: {
+        pills: [
+          { number: 1, title: 'Rest She Deserves', description: 'The quality sleep she needs every night' },
+          { number: 2, title: 'Thoughtful Comfort', description: 'A gift that shows you truly care' },
+          { number: 3, title: 'Wake Refreshed', description: 'Clear-eyed, pain free, ready for the day' },
+        ],
+      },
+      layers: {
+        pills: [
+          { number: 1, title: 'Support Layer', description: 'Firm foundation' },
+          { number: 2, title: 'Comfort Core', description: 'Plush microfiber' },
+          { number: 3, title: 'Cooling Shell', description: 'Breathable cotton' },
+        ],
+      },
+      care: {
+        pills: [
+          { number: 1, title: 'Machine Wash', description: 'Easy cleaning' },
+          { number: 2, title: 'Tumble Dry', description: 'Quick drying' },
+          { number: 3, title: 'No Ironing', description: 'Ready to use' },
+        ],
+      },
+      summary: {
+        headline: 'Gift-Ready Luxury',
+      },
+    },
+    showAwardCarousel: true,
+    awardCarouselItems: [
+      { title: 'Sleep O-Wards 2024', source: 'Oprah Daily' },
+      { title: 'Best Overall Pillow', source: 'Apartment Therapy' },
+      { title: 'Best Down Pillow', source: 'Men\'s Health' },
+      { title: 'Editor\'s Pick', source: 'Healthline' },
+      { title: '95/100 Rating', source: 'PureWow' },
+    ],
+  },
+  
+  // Benefits Section - Legacy text with slight Mother's Day adjustments
+  benefits: {
+    sectionTitle: 'End Your Pillow Battle',
+    sectionSubtitle: 'Fighting with overheating or a sore neck and tight shoulders? Give Mom the gift of being coolly cradled and finding the \'Sweet Spot\' every night.',
+    benefits: [
+      { icon: 'moon', title: 'Sleep like Royalty', description: 'Frustrated with overpriced pillows? FluffCo pillows are the same quality of luxury hotel pillows. For durable, luxurious comfort at an affordable price.' },
+      { icon: 'sparkles', title: 'Wake Up Pain-Free', description: 'Your neck rests in its natural position all night. Morning stiffness becomes a thing of the past.' },
+      { icon: 'refresh', title: 'Built for Real Life', description: 'Machine washable, maintains shape after cleaning. Practical hygiene without compromising support.' },
+    ],
+  },
+  
+  // Sleeper Types Section
+  sleeperTypes: {
+    sectionTitle: 'Perfect for Every Sleeper',
+    sectionSubtitle: 'No matter how mom sleeps, she\'ll love it',
+    sleeperTypes: [
+      { type: 'back', image: '/images/optimized/cards/sleep-position-back.png', title: 'Back', description: 'Cradles neck curve' },
+      { type: 'side', image: '/images/optimized/cards/sleep-position-side.png', title: 'Side', description: 'Fills shoulder gap' },
+      { type: 'stomach', image: '/images/optimized/cards/sleep-position-stomach.png', title: 'Stomach', description: 'Low profile support' },
+    ],
+    trustBadges: [
+      { icon: 'heart', text: 'Made with Love' },
+      { icon: 'moon', text: 'Rest for Mom' },
+    ],
+  },
+  
+  // Price Comparison - Disabled for gift page
+  priceComparison: {
+    ...baseConfig.priceComparison,
+    enabled: false,
+  },
+  
+  // The Difference Section - Mom-focused framing
+  difference: {
+    standardPillowTitle: 'Generic Gifts Miss the Mark',
+    standardPillowPoints: [
+      'Flowers wilt within days',
+      'Chocolates are forgotten by morning',
+      'Gift cards feel impersonal',
+      'Spa days are over too quickly',
+      'Jewelry sits in a drawer',
+    ],
+    fluffcoPillowTitle: 'A FluffCo Pillow Says "Thank You, Mom',
+    fluffcoPillowPoints: [
+      'Enjoyed every single night',
+      'Reminds her of your love each morning',
+      'Practical luxury she\'ll treasure',
+      'Premium quality she can feel',
+      'A gift that keeps on giving',
+    ],
+  },
+  
+  // Sleep Experts Section - Mom testimonials
+  sleepExperts: {
+    sectionTitle: 'The Gift Moms Rave About',
+    sectionSubtitle: 'Thoughtful. Practical. Unforgettable.',
+    cards: [
+      { image: '/images/expert-couple.png', title: 'Perfect for Mom', expandedContent: ['Give her the rest she deserves', 'Upgrade her nightly routine', 'A gesture of appreciation'] },
+      { image: '/images/expert-gift.png', title: 'Gift-Ready Presentation', expandedContent: ['Premium packaging included', 'No wrapping needed', 'Makes an impression'] },
+      { image: '/images/expert-quality.png', title: 'Quality She\'ll Feel', expandedContent: ['Hotel-grade construction', 'Oprah Daily recognized', 'Built to last for years'] },
+      { image: '/images/expert-everyday.png', title: 'Everyday Luxury', expandedContent: ['Used and appreciated nightly', 'Becomes part of her routine', 'The gift that keeps giving'] },
+    ],
+  },
+  
+  // Technology Section
+  technology: {
+    sectionTitle: 'The Quality Behind the Gift',
+    features: [
+      { id: 'sanforized', title: 'Sanforized Construction', description: 'A specialized process used by luxury hotel suppliers. Pre-shrinks and stabilizes the fabric, preventing the compression and shape loss that plagues standard pillows.', tags: ['Holds Shape', 'More Durable', 'Easy to Clean', 'Crisp Texture'] },
+      { id: 'microfiber', title: 'Microfiber Fill', description: 'Fibers 5x thinner than human hair create plush, down-like support without the allergens. Maintains loft while providing consistent resistance.', tags: ['Hypoallergenic', 'High Loft', 'Temperature Neutral', 'Wear Resistant'] },
+    ],
+  },
+  
+  // FluffCo Secret Section
+  fluffcoSecret: {
+    features: [
+      { title: 'Why It\'s Gift-Worthy', description: '"Sanforizing" is a special and rare way to make pillows that only the 5-star suppliers do. This unique method of craftsmanship allows these pillows to hold their shape night in and night out - as luxury pillows should!', bulletPoints: ['Holds Their Shape', 'More Durable', 'Easy to Clean', 'Extra Crisp Texture', 'Softer to the Touch'] },
+      { title: 'Luxury She Can Feel', description: 'The best pillows are made with the thinnest threads. Hotel-pillows use super thin fibers to make the inside of the pillow feel squishy but also firm at the same time.', bulletPoints: ['Plush, Down-Like Softness', 'Higher Loft (height and fluffiness)', 'Cooler Temperatures', 'Resistant to Wear and Tear', 'Hypoallergenic'] },
+    ],
+  },
+  
+  // Features Grid Section
+  featuresGrid: {
+    sectionTitle: 'A Gift Built to Last',
+    features: [
+      { icon: 'clock', title: 'Holds Shape for Years', description: 'Sanforized construction maintains loft and structure. No flattening, no sagging.' },
+      { icon: 'refresh', title: 'No Daily Fluffing', description: 'The structural core holds its position. Make your bed once and forget about it.' },
+      { icon: 'droplets', title: 'Machine Washable', description: 'Reinforced seams handle regular cleaning. Practical hygiene without compromise.' },
+      { icon: 'shield', title: 'Hypoallergenic', description: 'Down alternative fill provides luxury feel without allergens or ethical concerns.' },
+      { icon: 'thermometer', title: 'Temperature Neutral', description: 'Breathable cotton cover stays comfortable. No overheating, no cold spots.' },
+      { icon: 'layers', title: 'Consistent Support', description: 'Same feel on night 1,000 as night 1. Her neck knows what to expect.' },
+    ],
+  },
+  
+  // Testimonials Section (keep sectionTitle short for mobile)
+  testimonials: {
+    sectionTitle: 'Hotel-Level Comfort',
+    sectionSubtitle: 'Join the community who finally found their pillow',
+    testimonials: [
+      { name: 'Emily R.', location: 'California', verified: true, content: 'I bought this for my mom for Mother\'s Day and she calls me every week to tell me how well she\'s sleeping. Best gift I\'ve ever given her!', highlight: 'Best gift I\'ve ever given' },
+      { name: 'Jessica T.', location: 'New York', verified: true, content: 'My mom is impossible to shop for. She has everything. But she absolutely loved this pillow. Finally, a gift she actually uses every day!', highlight: 'A gift she actually uses' },
+      { name: 'Amanda K.', location: 'Texas', verified: true, content: 'The packaging was so beautiful, I didn\'t even need to wrap it. Mom was impressed before she even opened the box.', highlight: 'Beautiful packaging' },
+      { name: 'Rachel S.', location: 'Florida', verified: true, content: 'Mom deserves the best, and this pillow delivers. She says it\'s like sleeping on a cloud every night. Thank you FluffCo!', highlight: 'Like sleeping on a cloud' },
+      { name: 'Noe C.', location: 'Chicago', verified: true, content: 'Love, love, love these pillows. Ahhh! A wonderful night\'s sleep begins with these Down Alternative Pillows. My husband & I thank you!', highlight: 'Wonderful night\'s sleep' },
+      { name: 'Susan C.', location: 'Seattle', verified: true, content: 'Pillows have always been difficult for me. I wake with headaches frequently. Since using this pillow, I wake up feeling great!', highlight: 'Wake up feeling great' },
+      { name: 'Julien W.', location: 'Denver', verified: true, content: 'Just the perfect amount of \'squish\' so it\'s not flat. Best night\'s sleep in a long time since I got this pillow. Buy it!!', highlight: 'Perfect amount of squish' },
+      { name: 'Celia M.', location: 'Boston', verified: true, content: 'Best pillow I\'ve ever had! Best sleep ever, and I don\'t usually sleep well. Love, love this pillow. Thank you!', highlight: 'Best pillow ever' },
+    ],
+    showMoreButton: true,
+  },
+  
+  // Pricing Section - Mother's Day themed
+  pricing: {
+    sectionTitle: 'Mother\'s Day Gifting Event',
+    sectionSubtitle: 'Give mom the gift of better sleep at exclusive seasonal pricing.',
+    sizes: [
+      { id: 'standard', name: 'Standard', dimensions: '20"×28', badge: undefined },
+      { id: 'king', name: 'King', dimensions: '20"×36', badge: 'Chosen by 67%' },
+    ],
+    tiers: {
+      standard: [
+        { quantity: 1, pricePerPillow: 59.90, totalPrice: 59.90, originalPrice: 115.00, savings: 55.10, savingsPercent: 48 },
+        { quantity: 2, pricePerPillow: 49.45, totalPrice: 98.90, originalPrice: 222.00, savings: 123.10, savingsPercent: 55, badge: 'popular' },
+        { quantity: 4, pricePerPillow: 37.48, totalPrice: 149.90, originalPrice: 444.00, savings: 294.10, savingsPercent: 66, badge: 'best-value', bonus: { text: '4 Free Pillowcases', value: 116 } },
+      ],
+      king: [
+        { quantity: 1, pricePerPillow: 69.90, totalPrice: 69.90, originalPrice: 135.00, savings: 65.10, savingsPercent: 48 },
+        { quantity: 2, pricePerPillow: 57.45, totalPrice: 114.90, originalPrice: 262.00, savings: 147.10, savingsPercent: 56, badge: 'popular' },
+        { quantity: 4, pricePerPillow: 44.98, totalPrice: 179.90, originalPrice: 524.00, savings: 344.10, savingsPercent: 66, badge: 'best-value', bonus: { text: '4 Free Pillowcases', value: 136 } },
+      ],
+    },
+    trustBadges: ['100-Night Guarantee', 'Free Shipping', 'Made in USA'],
+    pressQuotes: [
+      { quote: 'Best Soft Pillow', source: 'Architectural Digest' },
+      { quote: 'Best Overall Pillow', source: 'Apartment Therapy' },
+      { quote: 'Best Down Pillow', source: 'Men\'s Health' },
+      { quote: 'Editor\'s Pick', source: 'Healthline' },
+      { quote: '95/100', source: 'PureWow' },
+    ],
+  },
+  
+  // FAQ Section
+  faq: {
+    sectionTitle: 'Common Questions',
+    items: [
+      { question: 'Is this a good gift for mom who already has pillows?', answer: 'Absolutely! Most moms don\'t invest in quality pillows for themselves. FluffCo pillows are a noticeable upgrade from standard pillows. She\'ll feel the difference immediately and appreciate the thoughtfulness.' },
+      { question: 'Does it come in gift-ready packaging?', answer: 'Yes! Every FluffCo pillow arrives in premium packaging that\'s designed to impress. No additional wrapping needed. Just add a card and you\'re ready to gift.' },
+      { question: 'What if mom doesn\'t like it?', answer: 'We offer a 100-night trial. If she\'s not completely satisfied, return it for a full refund. No questions asked. We want mom to love her gift!' },
+      { question: 'How is this different from regular pillows?', answer: 'FluffCo pillows use Sanforized construction, the same technique used by 5-star hotels. This means the pillow holds its shape night after night, unlike regular pillows that flatten within months.' },
+      { question: 'Will it arrive in time for Mother\'s Day?', answer: 'We offer fast shipping to ensure your gift arrives on time. Order by the date shown in our countdown timer for guaranteed Mother\'s Day delivery.' },
+      { question: 'Can I add a personal message?', answer: 'While we don\'t include custom cards, our premium packaging makes a statement on its own. We recommend adding your own heartfelt card to make it extra special.' },
+    ],
+  },
+  
+  // Footer
+  footer: {
+    tagline: 'Premium sleep, always.',
+    copyright: '© 2024 FluffCo. Premium sleep, always.',
+    links: [
+      { label: 'Privacy Policy', href: '#' },
+      { label: 'Terms of Service', href: '#' },
+      { label: 'Contact', href: 'mailto:hello@fluff.co' },
+    ],
+  },
+};

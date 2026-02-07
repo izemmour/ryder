@@ -1,0 +1,34 @@
+{
+  "query": "SELECT slug, name, primaryColor, accentColor FROM color_schemes;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT slug, name, primaryColor, accentColor FROM color_schemes;",
+  "rows": [
+    {
+      "slug": "valentine-gift",
+      "name": "Valentine's Day",
+      "primaryColor": "#c41e3a",
+      "accentColor": "#fff5f5"
+    },
+    {
+      "slug": "mothers-day",
+      "name": "Mother's Day",
+      "primaryColor": "#9b6b6b",
+      "accentColor": "#fff9f9"
+    },
+    {
+      "slug": "fathers-day",
+      "name": "Father's Day",
+      "primaryColor": "#2c5282",
+      "accentColor": "#f0f5ff"
+    },
+    {
+      "slug": "black-friday",
+      "name": "Black Friday",
+      "primaryColor": "#000000",
+      "accentColor": "#FFF9E6"
+    }
+  ],
+  "messages": [],
+  "stdout": "slug\tname\tprimaryColor\taccentColor\nvalentine-gift\tValentine's Day\t#c41e3a\t#fff5f5\nmothers-day\tMother's Day\t#9b6b6b\t#fff9f9\nfathers-day\tFather's Day\t#2c5282\t#f0f5ff\nblack-friday\tBlack Friday\t#000000\t#FFF9E6\n",
+  "stderr": "",
+  "execution_time_ms": 350
+}

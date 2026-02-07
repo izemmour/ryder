@@ -1,0 +1,15 @@
+{
+  "query": "SELECT id, text, secondaryText FROM cta_buttons WHERE text LIKE '%Claim Now%' LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, text, secondaryText FROM cta_buttons WHERE text LIKE '%Claim Now%' LIMIT 5;",
+  "rows": [
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "secondaryText": "& Save {discount}%"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tsecondaryText\n4\tClaim Now\t& Save {discount}%\n",
+  "stderr": "",
+  "execution_time_ms": 357
+}

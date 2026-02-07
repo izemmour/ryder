@@ -1,0 +1,13 @@
+{
+  "query": "\n-- Save original color first\nSELECT primaryColor FROM color_schemes WHERE slug = 'valentine-gift';\n\n-- Update to a test color (bright orange) to verify changes propagate\nUPDATE color_schemes SET primaryColor = '#ff6600' WHERE slug = 'valentine-gift';\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute \n-- Save original color first\nSELECT primaryColor FROM color_schemes WHERE slug = 'valentine-gift';\n\n-- Update to a test color (bright orange) to verify changes propagate\nUPDATE color_schemes SET primaryColor = '#ff6600' WHERE slug = 'valentine-gift';\n",
+  "rows": [
+    {
+      "primaryColor": "#c41e3a"
+    }
+  ],
+  "messages": [],
+  "stdout": "primaryColor\n#c41e3a\n",
+  "stderr": "",
+  "execution_time_ms": 779
+}

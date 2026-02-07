@@ -1,0 +1,13 @@
+{
+  "query": "SELECT id FROM cta_buttons WHERE text = 'Claim 66% Off';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id FROM cta_buttons WHERE text = 'Claim 66% Off';",
+  "rows": [
+    {
+      "id": "30001"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\n30001\n",
+  "stderr": "",
+  "execution_time_ms": 355
+}

@@ -1,0 +1,18 @@
+{
+  "query": "SELECT slug, primaryColor, secondaryColor, accentColor, accentDarkColor, backgroundColor FROM color_schemes WHERE slug = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT slug, primaryColor, secondaryColor, accentColor, accentDarkColor, backgroundColor FROM color_schemes WHERE slug = 'black-friday';",
+  "rows": [
+    {
+      "slug": "black-friday",
+      "primaryColor": "#000000",
+      "secondaryColor": "#1a1a1a",
+      "accentColor": "#fff9f0",
+      "accentDarkColor": "#ffe8cc",
+      "backgroundColor": "#fffbf5"
+    }
+  ],
+  "messages": [],
+  "stdout": "slug\tprimaryColor\tsecondaryColor\taccentColor\taccentDarkColor\tbackgroundColor\nblack-friday\t#000000\t#1a1a1a\t#fff9f0\t#ffe8cc\t#fffbf5\n",
+  "stderr": "",
+  "execution_time_ms": 360
+}

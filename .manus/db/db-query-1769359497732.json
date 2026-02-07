@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE color_schemes SET \n  primaryColor = '#d4a574',\n  secondaryColor = '#b8935f',\n  accentColor = '#fff9f0',\n  accentDarkColor = '#ffe8cc',\n  backgroundColor = '#fffbf5',\n  secondaryLightColor = '#fff3e0',\n  isDark = 0\nWHERE slug = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute UPDATE color_schemes SET \n  primaryColor = '#d4a574',\n  secondaryColor = '#b8935f',\n  accentColor = '#fff9f0',\n  accentDarkColor = '#ffe8cc',\n  backgroundColor = '#fffbf5',\n  secondaryLightColor = '#fff3e0',\n  isDark = 0\nWHERE slug = 'black-friday';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 130
+}

@@ -1,0 +1,30 @@
+{
+  "query": "SELECT id, name, productTitle FROM marketing_angles;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, name, productTitle FROM marketing_angles;",
+  "rows": [
+    {
+      "id": "1",
+      "name": "Restorative Alignment",
+      "productTitle": "Restorative Alignment Pillow"
+    },
+    {
+      "id": "2",
+      "name": "Hotel Quality",
+      "productTitle": "The Same Pillows Used in 5-Star Hotels - For Less"
+    },
+    {
+      "id": "3",
+      "name": "Neck Pain Relief",
+      "productTitle": "Neck Pain Relief Pillow"
+    },
+    {
+      "id": "4",
+      "name": "Gift Angle",
+      "productTitle": "The Perfect Gift for Better Sleep"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tname\tproductTitle\n1\tRestorative Alignment\tRestorative Alignment Pillow\n2\tHotel Quality\tThe Same Pillows Used in 5-Star Hotels - For Less\n3\tNeck Pain Relief\tNeck Pain Relief Pillow\n4\tGift Angle\tThe Perfect Gift for Better Sleep\n",
+  "stderr": "",
+  "execution_time_ms": 367
+}

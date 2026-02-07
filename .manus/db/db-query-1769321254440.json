@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO cta_buttons (text, secondaryText, alternativeText, isDefault, sortOrder, createdAt, updatedAt) \nVALUES ('Claim 66% Off', '& Save {discount}%', 'Shop Now', 0, 6, NOW(), NOW());",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute INSERT INTO cta_buttons (text, secondaryText, alternativeText, isDefault, sortOrder, createdAt, updatedAt) \nVALUES ('Claim 66% Off', '& Save {discount}%', 'Shop Now', 0, 6, NOW(), NOW());",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 351
+}

@@ -1,0 +1,37 @@
+{
+  "query": "SELECT pageId FROM landing_page_settings;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId FROM landing_page_settings;",
+  "rows": [
+    {
+      "pageId": "black-friday"
+    },
+    {
+      "pageId": "default"
+    },
+    {
+      "pageId": "fathers-day"
+    },
+    {
+      "pageId": "hotel-quality"
+    },
+    {
+      "pageId": "mothers-day"
+    },
+    {
+      "pageId": "neck-pain-relief"
+    },
+    {
+      "pageId": "restorative-alignment"
+    },
+    {
+      "pageId": "side-sleeper"
+    },
+    {
+      "pageId": "valentine-gift"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\nblack-friday\ndefault\nfathers-day\nhotel-quality\nmothers-day\nneck-pain-relief\nrestorative-alignment\nside-sleeper\nvalentine-gift\n",
+  "stderr": "",
+  "execution_time_ms": 364
+}

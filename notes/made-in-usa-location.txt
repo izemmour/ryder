@@ -1,0 +1,15 @@
+Key Finding: Made in the USA Feature Location
+
+The "Made in the USA" text appears in the hero section benefits grid with 4 features:
+1. Perfect Sleep, Every Night - Wake up feeling refreshed
+2. Always Cool - Crafted for perfect temperature control
+3. 5-Star Quality - Bye bye neck and back pain
+4. Made in the USA - Premium materials only
+
+This is a separate location from the trust badges section below.
+Need to find and update this in Home.tsx.
+
+Also appears in the "Choose Your Setup" section trust badges:
+- 100-Night Guarantee
+- Free Shipping (already conditional)
+- Made in USA (needs to be conditional)

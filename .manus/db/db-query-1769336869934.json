@@ -1,0 +1,9 @@
+{
+  "query": "\n-- Restore original romantic red color\nUPDATE color_schemes SET primaryColor = '#c41e3a' WHERE slug = 'valentine-gift';\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute \n-- Restore original romantic red color\nUPDATE color_schemes SET primaryColor = '#c41e3a' WHERE slug = 'valentine-gift';\n",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 358
+}

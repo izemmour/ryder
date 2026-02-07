@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE color_schemes SET isDark = 1 WHERE slug = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute UPDATE color_schemes SET isDark = 1 WHERE slug = 'black-friday';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 364
+}

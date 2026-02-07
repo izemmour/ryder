@@ -1,0 +1,18 @@
+{
+  "query": "SELECT pageId, colorScheme, marketingAngle, angleId, ctaButtonId, eventEndDate FROM landing_page_settings WHERE pageId LIKE '%valentine%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId, colorScheme, marketingAngle, angleId, ctaButtonId, eventEndDate FROM landing_page_settings WHERE pageId LIKE '%valentine%';",
+  "rows": [
+    {
+      "pageId": "valentine-gift",
+      "colorScheme": "NULL",
+      "marketingAngle": "NULL",
+      "angleId": "4",
+      "ctaButtonId": "2",
+      "eventEndDate": "2026-02-14"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tcolorScheme\tmarketingAngle\tangleId\tctaButtonId\teventEndDate\nvalentine-gift\tNULL\tNULL\t4\t2\t2026-02-14\n",
+  "stderr": "",
+  "execution_time_ms": 406
+}

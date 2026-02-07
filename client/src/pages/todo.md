@@ -1,0 +1,91 @@
+# Project TODO
+
+## Completed
+- [x] Add danger reminder section above CTA (neutral colors, pillow replacement reminders based on quiz)
+- [x] Fix loading bar to sync with percentage text display
+- [x] Fix mobile "Get My Pillow" button to stay inline (text wraps instead)
+- [x] Fix anchor animation to redirect to top of page after quiz
+- [x] Remove dismiss/close functionality from ProfileResultsBanner (section should always stay visible)
+- [x] Fix sticky header to not show above ProfileResultsBanner on results page
+- [x] Fix desktop sticky Add to Cart spacing between price, compare at price, and discount
+- [x] Add personalized sleep position compatibility section to ProfileResultsBanner (highlight user's position with checkmark)
+- [x] Update danger reminder section to use navy blue (#2d3a5c) color scheme
+- [x] Update quiz CTA section styling for consistency (already uses navy blue)
+- [x] Fix "Made for Quiz" tag - now shows contextual answer-based labels from quiz
+- [x] Add sleep position compatibility section to product hero (Back/Side/Stomach with images, highlight user's position)
+- [x] Expand tag-to-label mappings in QuizModule for more personalized messaging
+- [x] Create unified contextual carousel with visually rich cards (replaces all separate contextual elements)
+- [x] Design cards with images for: sleep position, pillow age, neck pain, temperature, allergies, support issues
+- [x] Implement carousel with dots navigation and auto-switch (4 seconds per card)
+- [x] Use electric blue (#1d9bf0) consistently across all contextual elements
+- [x] Remove separate danger reminders and sleep position sections - carousel replaces them
+- [x] Create separate "Pillow Needs Replacing" section above checkout button with 3 data-driven USPs
+- [x] Update carousel to show 2 cards at a time (2 rows visible), auto-switch one row at a time
+- [x] Make electric blue more subtle - white/subtle background, blue only for accents (checkmarks, titles)
+- [x] Rename pillow section to "Why Your Pillow Needs Replacing" and attach visually to CTA button
+- [x] Update carousel to side-by-side 0.5fr layout with images above text, more visual separation
+- [x] Add pillow age info ("Your pillow is 2-5 years old") as light text aligned right of title in replacement section
+- [x] Make texts bigger in "Why Your Pillow Needs Replacing" section, restore previous composition style
+- [x] Update carousel to show 3 cards on desktop, 2 cards on mobile, with images in each card
+- [x] Update carousel cards with white bg and subtle electric blue touches (border/accent)
+- [x] Remove extra contextual tags under title since carousel replaces them
+- [x] Make pillow age indicator alarm-like with color-coded urgency levels (orange for 2-5 years, red for 5+ years)
+- [x] Make carousel texts and dots bigger
+- [x] Update carousel background to connect better with rest of design
+- [x] Slow down carousel auto-switch and switch one card at a time with directional animation
+- [x] Remove quiz CTAs on result page (Find out in 60 seconds, FAQ popup)
+- [x] Remove "Get Your Sleep Score" section entirely from the site
+- [x] Generate emotional images for pillow replacement section (60% support loss, dust mites, neck strain)
+- [x] Update carousel border and background to white/transparent with unified styling
+- [x] Make carousel cards taller to show more text
+- [x] Remove tags from result module on mobile
+- [x] If 3 or fewer cards: no animation, no dots, add explanatory title based on sleep score
+- [x] Align "Based on your sleep profile" subtitle to the right
+- [x] Add restart analysis icon button next to collapse icon in result section
+- [x] Restore previous "Why Your Pillow Needs Replacing" design with checkmarks
+- [x] Generate consistent images for carousel cards (hypoallergenic, neck pain, cooling, etc.)
+- [x] Improve carousel design
+- [x] Slow down auto-switch to 10 seconds
+- [x] Revert carousel - remove universal USP cards added, restore original "Why FluffCo is Right for You" title
+- [x] Ensure carousel only appears on result page (when quizTags exist)
+- [x] Improve carousel design to better match the rest of the page
+- [x] Unify design - replace checkmarks with vertical blue line on left of titles
+- [x] Unify spacing, backgrounds, and borders between carousel and pillow replacement sections
+- [x] Simplify quiz debugger to just heading with selector dropdown and iframe rendering result page
+- [x] Update carousel grid: 1 card = full width, 2 cards = half, 3+ cards = 1/3 on desktop (same logic for mobile)
+- [x] Fix vertical blue line - only on "Why Your Pillow Needs Replacing" title, not inside items
+- [x] Restore grey checkmarks for USP items inside pillow replacement section
+- [x] Remove blue lines from carousel cards
+- [x] Increase carousel card description to 3 lines instead of 2
+- [x] Remove hover effect from carousel card images (not clickable)
+- [x] Make "All Selectors" default option at top of quiz debugger dropdown
+- [x] Remove "Default (No Quiz)" option from quiz debugger
+- [x] Increase carousel card description to 4 lines instead of 3
+- [x] Fix desktop swipe/drag functionality for carousels
+- [x] Add Apple Magic Mouse/trackpad horizontal swipe support for carousel
+- [x] Fix carousel dots/arrows to be clickable (blocked by swipe handlers)
+- [x] Improve carousel swipe animation to show clear directional transition (cards slide left/right)
+- [x] Generate new Cooling Technology close-up image (300 thread count material)
+- [x] Review and improve existing carousel card images (all images verified as good quality)
+- [x] Implement "Works for Every Sleeper" section customization based on quiz answers
+- [x] Add debouncing to carousel swipe to prevent multiple rapid triggers (500ms cooldown)
+- [x] Optimize all images across site for faster loading (466MB → 23MB optimized)
+- [x] Unify background colors between carousel cards and "Why Your Pillow Needs Replacing" section
+- [x] Make "5+ years old" option look more on-brand (navy bg with red pulse, 2-5 years uses gold)
+- [x] Update badge to lighter background with black text (10% opacity tint)
+- [x] Optimize remaining images (thumbnails, Select Size, gallery, all other sections)
+- [x] Optimize images in: End Your Pillow Battle, Why It Lasts, FluffCo Secret, Built for Long Run, testimonials, gallery, events, sizes
+- [x] Fix blurry images in End Your Pillow Battle section (upgraded to 1200px width)
+- [x] Preload gallery images after initial site load for instant switching (staggered loading after page load)
+
+## Remaining
+- [x] Rename project from restorative-alignment-pillow to skyvane-fluff (package.json updated)
+- [x] Add swipe/drag support to Gift Cards carousel (mouse drag + touch)
+- [x] Add swipe/drag to main product gallery with infinite looping (first/last connect)
+- [x] Disable desktop swipe for gallery (keep mobile touch only)
+- [x] Run production build and test performance (JS: 329KB gzip, CSS: 29KB gzip)
+- [x] Enable lazy loading for below-fold images
+- [x] Convert images to WebP format (43MB PNG → 2.6MB WebP, 94% reduction)
+- [x] Implement low-quality image placeholders (LQIP) with blur effect (BlurImage component)
+- [x] Configure CDN caching headers for static assets (WebP/optimized: 1yr immutable, images: 30d, HTML: revalidate)
+- [ ] Revert 30 Night Trial badge to original size

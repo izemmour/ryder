@@ -1,0 +1,82 @@
+{
+  "query": "SELECT * FROM cta_buttons ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT * FROM cta_buttons ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "text": "Order Now",
+      "variant": "default",
+      "isDefault": "1",
+      "description": "NULL",
+      "sortOrder": "1",
+      "createdAt": "2026-01-24 10:24:27",
+      "updatedAt": "2026-01-24 10:24:27",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Shop Now"
+    },
+    {
+      "id": "2",
+      "text": "Gift Now",
+      "variant": "default",
+      "isDefault": "0",
+      "description": "NULL",
+      "sortOrder": "2",
+      "createdAt": "2026-01-24 10:24:27",
+      "updatedAt": "2026-01-24 10:24:27",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Send a Gift"
+    },
+    {
+      "id": "3",
+      "text": "Get Hotel Quality",
+      "variant": "default",
+      "isDefault": "0",
+      "description": "NULL",
+      "sortOrder": "3",
+      "createdAt": "2026-01-24 10:24:27",
+      "updatedAt": "2026-01-24 10:24:27",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Order Now"
+    },
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "variant": "default",
+      "isDefault": "0",
+      "description": "NULL",
+      "sortOrder": "4",
+      "createdAt": "2026-01-24 10:24:27",
+      "updatedAt": "2026-01-24 10:24:27",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Yours"
+    },
+    {
+      "id": "5",
+      "text": "End Your Pillow Battle",
+      "variant": "default",
+      "isDefault": "0",
+      "description": "NULL",
+      "sortOrder": "5",
+      "createdAt": "2026-01-24 10:24:27",
+      "updatedAt": "2026-01-24 10:24:27",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Relief"
+    },
+    {
+      "id": "30001",
+      "text": "Claim 66% Off",
+      "variant": "primary",
+      "isDefault": "0",
+      "description": "Black Friday CRO-optimized CTA emphasizing urgency and value",
+      "sortOrder": "5",
+      "createdAt": "2026-01-25 05:12:04",
+      "updatedAt": "2026-01-25 05:12:04",
+      "secondaryText": "Claim 66% Off & Save $294",
+      "alternativeText": "Claim Your Black Friday Deal"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tvariant\tisDefault\tdescription\tsortOrder\tcreatedAt\tupdatedAt\tsecondaryText\talternativeText\n1\tOrder Now\tdefault\t1\tNULL\t1\t2026-01-24 10:24:27\t2026-01-24 10:24:27\t& Save {discount}%\tShop Now\n2\tGift Now\tdefault\t0\tNULL\t2\t2026-01-24 10:24:27\t2026-01-24 10:24:27\t& Save {discount}%\tSend a Gift\n3\tGet Hotel Quality\tdefault\t0\tNULL\t3\t2026-01-24 10:24:27\t2026-01-24 10:24:27\t& Save {discount}%\tOrder Now\n4\tClaim Now\tdefault\t0\tNULL\t4\t2026-01-24 10:24:27\t2026-01-24 10:24:27\t& Save {discount}%\tGet Yours\n5\tEnd Your Pillow Battle\tdefault\t0\tNULL\t5\t2026-01-24 10:24:27\t2026-01-24 10:24:27\t& Save {discount}%\tGet Relief\n30001\tClaim 66% Off\tprimary\t0\tBlack Friday CRO-optimized CTA emphasizing urgency and value\t5\t2026-01-25 05:12:04\t2026-01-25 05:12:04\tClaim 66% Off & Save $294\tClaim Your Black Friday Deal\n",
+  "stderr": "",
+  "execution_time_ms": 361
+}

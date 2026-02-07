@@ -1,0 +1,31 @@
+{
+  "query": "SHOW TABLES;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SHOW TABLES;",
+  "rows": [
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "color_schemes"
+    },
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "cta_buttons"
+    },
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "landing_page_settings"
+    },
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "marketing_angles"
+    },
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "site_settings"
+    },
+    {
+      "Tables_in_HGQz9dLDHpFFWknD7bvAQD": "users"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_HGQz9dLDHpFFWknD7bvAQD\n__drizzle_migrations\ncolor_schemes\ncta_buttons\nlanding_page_settings\nmarketing_angles\nsite_settings\nusers\n",
+  "stderr": "",
+  "execution_time_ms": 349
+}

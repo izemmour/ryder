@@ -1,0 +1,8 @@
+{
+  "query": "SELECT lps.id, lps.page_id, lps.cta_event_primary, cb.id as cta_id, cb.text as cta_text \nFROM landing_page_settings lps \nLEFT JOIN cta_buttons cb ON lps.cta_event_primary = cb.id \nWHERE lps.page_id = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT lps.id, lps.page_id, lps.cta_event_primary, cb.id as cta_id, cb.text as cta_text \nFROM landing_page_settings lps \nLEFT JOIN cta_buttons cb ON lps.cta_event_primary = cb.id \nWHERE lps.page_id = 'black-friday';",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'lps.cta_event_primary' in 'on clause'"
+  ]
+}

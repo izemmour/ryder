@@ -1,0 +1,30 @@
+{
+  "query": "SELECT * FROM landing_page_settings WHERE pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT * FROM landing_page_settings WHERE pageId = 'black-friday';",
+  "rows": [
+    {
+      "id": "4",
+      "pageId": "black-friday",
+      "colorScheme": "black-friday",
+      "ctaText": "NULL",
+      "redirectUrl": "NULL",
+      "isActive": "1",
+      "createdAt": "2026-01-24 15:11:27",
+      "updatedAt": "2026-01-25 07:13:58",
+      "marketingAngle": "NULL",
+      "eventEndDate": "2026-11-27",
+      "ctaButtonId": "5",
+      "angleId": "1",
+      "galleryImages": "NULL",
+      "subSentence": "NULL",
+      "generatedColorScheme": "NULL",
+      "lastComplianceCheck": "NULL",
+      "complianceIssues": "NULL",
+      "autoFixAvailable": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpageId\tcolorScheme\tctaText\tredirectUrl\tisActive\tcreatedAt\tupdatedAt\tmarketingAngle\teventEndDate\tctaButtonId\tangleId\tgalleryImages\tsubSentence\tgeneratedColorScheme\tlastComplianceCheck\tcomplianceIssues\tautoFixAvailable\n4\tblack-friday\tblack-friday\tNULL\tNULL\t1\t2026-01-24 15:11:27\t2026-01-25 07:13:58\tNULL\t2026-11-27\t5\t1\tNULL\tNULL\tNULL\tNULL\tNULL\t0\n",
+  "stderr": "",
+  "execution_time_ms": 110
+}

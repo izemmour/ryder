@@ -1,0 +1,1 @@
+ALTER TABLE `landing_page_settings` ADD `ctaButtonId` int;

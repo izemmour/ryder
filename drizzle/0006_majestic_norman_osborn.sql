@@ -1,0 +1,1 @@
+ALTER TABLE `landing_page_settings` ADD `eventEndDate` varchar(50);

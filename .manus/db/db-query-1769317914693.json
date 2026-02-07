@@ -1,0 +1,45 @@
+{
+  "query": "SELECT id, text, secondaryText, alternativeText, description FROM cta_buttons ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, text, secondaryText, alternativeText, description FROM cta_buttons ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "text": "Order Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Shop Now",
+      "description": "NULL"
+    },
+    {
+      "id": "2",
+      "text": "Gift Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Send a Gift",
+      "description": "NULL"
+    },
+    {
+      "id": "3",
+      "text": "Get Hotel Quality",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Order Now",
+      "description": "NULL"
+    },
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Yours",
+      "description": "NULL"
+    },
+    {
+      "id": "5",
+      "text": "End Your Pillow Battle",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Relief",
+      "description": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tsecondaryText\talternativeText\tdescription\n1\tOrder Now\t& Save {discount}%\tShop Now\tNULL\n2\tGift Now\t& Save {discount}%\tSend a Gift\tNULL\n3\tGet Hotel Quality\t& Save {discount}%\tOrder Now\tNULL\n4\tClaim Now\t& Save {discount}%\tGet Yours\tNULL\n5\tEnd Your Pillow Battle\t& Save {discount}%\tGet Relief\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 353
+}

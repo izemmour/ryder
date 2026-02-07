@@ -1,0 +1,18 @@
+{
+  "query": "SELECT pageId, ctaButtonId FROM landing_page_settings WHERE pageId IN ('valentine-gift', 'black-friday');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId, ctaButtonId FROM landing_page_settings WHERE pageId IN ('valentine-gift', 'black-friday');",
+  "rows": [
+    {
+      "pageId": "valentine-gift",
+      "ctaButtonId": "2"
+    },
+    {
+      "pageId": "black-friday",
+      "ctaButtonId": "6"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tctaButtonId\nvalentine-gift\t2\nblack-friday\t6\n",
+  "stderr": "",
+  "execution_time_ms": 347
+}

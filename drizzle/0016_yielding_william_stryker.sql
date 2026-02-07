@@ -1,0 +1,1 @@
+ALTER TABLE `cta_buttons` DROP COLUMN `url`;

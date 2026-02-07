@@ -1,0 +1,18 @@
+{
+  "query": "SELECT \n  lps.pageId,\n  lps.angleId,\n  ma.name as marketing_angle_name,\n  lps.colorScheme,\n  lps.ctaButtonId,\n  cb.text as cta_text\nFROM landing_page_settings lps\nLEFT JOIN marketing_angles ma ON lps.angleId = ma.id\nLEFT JOIN cta_buttons cb ON lps.ctaButtonId = cb.id\nWHERE lps.pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT \n  lps.pageId,\n  lps.angleId,\n  ma.name as marketing_angle_name,\n  lps.colorScheme,\n  lps.ctaButtonId,\n  cb.text as cta_text\nFROM landing_page_settings lps\nLEFT JOIN marketing_angles ma ON lps.angleId = ma.id\nLEFT JOIN cta_buttons cb ON lps.ctaButtonId = cb.id\nWHERE lps.pageId = 'black-friday';",
+  "rows": [
+    {
+      "pageId": "black-friday",
+      "angleId": "1",
+      "marketing_angle_name": "Restorative Alignment",
+      "colorScheme": "NULL",
+      "ctaButtonId": "4",
+      "cta_text": "Claim Now"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tangleId\tmarketing_angle_name\tcolorScheme\tctaButtonId\tcta_text\nblack-friday\t1\tRestorative Alignment\tNULL\t4\tClaim Now\n",
+  "stderr": "",
+  "execution_time_ms": 348
+}

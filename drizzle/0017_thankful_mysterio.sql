@@ -1,0 +1,1 @@
+ALTER TABLE `marketing_angles` DROP COLUMN `colorScheme`;

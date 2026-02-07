@@ -1,0 +1,16 @@
+{
+  "query": "SELECT id, text, secondaryText, alternativeText FROM cta_buttons WHERE text LIKE '%Claim%Deal%' OR text LIKE '%Claim Now%' ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, text, secondaryText, alternativeText FROM cta_buttons WHERE text LIKE '%Claim%Deal%' OR text LIKE '%Claim Now%' ORDER BY id;",
+  "rows": [
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Yours"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tsecondaryText\talternativeText\n4\tClaim Now\t& Save {discount}%\tGet Yours\n",
+  "stderr": "",
+  "execution_time_ms": 361
+}

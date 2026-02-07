@@ -1,0 +1,55 @@
+{
+  "query": "SELECT pageId, colorScheme, eventEndDate FROM landing_page_settings;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId, colorScheme, eventEndDate FROM landing_page_settings;",
+  "rows": [
+    {
+      "pageId": "valentine-gift",
+      "colorScheme": "NULL",
+      "eventEndDate": "2026-02-14"
+    },
+    {
+      "pageId": "mothers-day",
+      "colorScheme": "NULL",
+      "eventEndDate": "2026-05-10"
+    },
+    {
+      "pageId": "fathers-day",
+      "colorScheme": "NULL",
+      "eventEndDate": "2026-06-21"
+    },
+    {
+      "pageId": "black-friday",
+      "colorScheme": "NULL",
+      "eventEndDate": "2026-11-27"
+    },
+    {
+      "pageId": "restorative-alignment",
+      "colorScheme": "NULL",
+      "eventEndDate": "NULL"
+    },
+    {
+      "pageId": "hotel-quality",
+      "colorScheme": "NULL",
+      "eventEndDate": "NULL"
+    },
+    {
+      "pageId": "neck-pain-relief",
+      "colorScheme": "NULL",
+      "eventEndDate": "NULL"
+    },
+    {
+      "pageId": "side-sleeper",
+      "colorScheme": "NULL",
+      "eventEndDate": "NULL"
+    },
+    {
+      "pageId": "default",
+      "colorScheme": "NULL",
+      "eventEndDate": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tcolorScheme\teventEndDate\nvalentine-gift\tNULL\t2026-02-14\nmothers-day\tNULL\t2026-05-10\nfathers-day\tNULL\t2026-06-21\nblack-friday\tNULL\t2026-11-27\nrestorative-alignment\tNULL\tNULL\nhotel-quality\tNULL\tNULL\nneck-pain-relief\tNULL\tNULL\nside-sleeper\tNULL\tNULL\ndefault\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 398
+}

@@ -1,0 +1,22 @@
+{
+  "query": "\n-- First, find the Claim Deal button ID\nSELECT id, text FROM cta_buttons WHERE text LIKE '%Claim%' OR text LIKE '%Deal%' LIMIT 10;\n\n-- Then update Black Friday page to use it (will do in next query after finding ID)\n",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute \n-- First, find the Claim Deal button ID\nSELECT id, text FROM cta_buttons WHERE text LIKE '%Claim%' OR text LIKE '%Deal%' LIMIT 10;\n\n-- Then update Black Friday page to use it (will do in next query after finding ID)\n",
+  "rows": [
+    {
+      "id": "4",
+      "text": "Claim Now"
+    },
+    {
+      "id": "30001",
+      "text": "Claim 66% Off"
+    },
+    {
+      "id": "30002",
+      "text": "Claim 66% Off"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\n4\tClaim Now\n30001\tClaim 66% Off\n30002\tClaim 66% Off\n",
+  "stderr": "",
+  "execution_time_ms": 380
+}

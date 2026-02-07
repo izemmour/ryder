@@ -1,0 +1,1 @@
+ALTER TABLE `color_schemes` ADD `isDark` int DEFAULT 0;

@@ -1,0 +1,8 @@
+{
+  "query": "SELECT pageId, marketing_angle_id, colorScheme, ctaButtonId FROM landing_page_settings;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId, marketing_angle_id, colorScheme, ctaButtonId FROM landing_page_settings;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'marketing_angle_id' in 'field list'"
+  ]
+}

@@ -1,0 +1,26 @@
+# Gallery Issue Analysis - UseCasePage
+
+## Current State (Side Sleeper Page)
+The gallery IS working and showing:
+- 7 thumbnail buttons visible (4, 5, 6, 7, 8, 9, 10)
+- Thumbnails show: 5-star, tips, 3 layers, VS (comparison), care, hotel, FLUFFCo vs hotels
+- Main image area appears to be loading but not showing the pillow image
+
+## Issue Identified
+The main gallery image is NOT displaying (grey/empty area visible)
+The thumbnails are present but the main image container appears empty
+
+## Root Cause Investigation Needed
+1. Check if images are loading properly
+2. Check if imageLoaded state is working correctly
+3. Verify image paths are correct
+
+## User's Complaint
+- Missing pillow images in hero section
+- Missing images 1, 4, and 7 in gallery
+- Missing pills/badges on images 2 and 3
+- Missing thumbnail add-ons
+
+## Solution Approach
+The user wants the UseCasePage to use the EXACT same hero section component as Home.tsx
+Instead of recreating the gallery, extract it as a reusable component

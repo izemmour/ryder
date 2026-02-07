@@ -1,0 +1,26 @@
+Image Analysis: expert-pillow-feathers-800.webp (800x800 pixels)
+
+Pillow corner position analysis:
+- The pillow corner (bottom point) is located at approximately:
+  - Horizontal: 50% (center of image)
+  - Vertical: 52% from top (slightly below center)
+
+- The white label/tag on the pillow is at approximately:
+  - Horizontal: 58% from left
+  - Vertical: 47% from top
+
+Circle positioning for magnifying glass effect:
+- Center should be at: left: 50%, top: 52%
+- This places the circle directly on the pillow corner
+
+Text label positions (relative to circle center at 50%, 52%):
+- Top label: top: 8%, centered horizontally
+- Left label: left: 4%, top: 45% (aligned with circle center)
+- Right label: right: 4%, top: 45% (aligned with circle center)
+- Bottom label: bottom: 8%, centered horizontally
+
+Connection dots should be at the edge of the circle:
+- Top dot: 50%, 40% (circle top edge)
+- Left dot: 38%, 52% (circle left edge)
+- Right dot: 62%, 52% (circle right edge)
+- Bottom dot: 50%, 64% (circle bottom edge)

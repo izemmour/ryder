@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  lps.pageId,\n  lps.angleId,\n  ma.name as marketing_angle_name,\n  lps.colorScheme,\n  lps.ctaButtonId,\n  cb.primaryText as cta_primary_text\nFROM landing_page_settings lps\nLEFT JOIN marketing_angles ma ON lps.angleId = ma.id\nLEFT JOIN cta_buttons cb ON lps.ctaButtonId = cb.id\nWHERE lps.pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT \n  lps.pageId,\n  lps.angleId,\n  ma.name as marketing_angle_name,\n  lps.colorScheme,\n  lps.ctaButtonId,\n  cb.primaryText as cta_primary_text\nFROM landing_page_settings lps\nLEFT JOIN marketing_angles ma ON lps.angleId = ma.id\nLEFT JOIN cta_buttons cb ON lps.ctaButtonId = cb.id\nWHERE lps.pageId = 'black-friday';",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'cb.primarytext' in 'field list'"
+  ]
+}

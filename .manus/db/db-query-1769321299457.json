@@ -1,0 +1,9 @@
+{
+  "query": "UPDATE landing_page_settings \nSET ctaButtonId = (SELECT MAX(id) FROM cta_buttons WHERE text = 'Claim 66% Off')\nWHERE pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute UPDATE landing_page_settings \nSET ctaButtonId = (SELECT MAX(id) FROM cta_buttons WHERE text = 'Claim 66% Off')\nWHERE pageId = 'black-friday';",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 367
+}

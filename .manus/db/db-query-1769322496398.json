@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO color_schemes (slug, name, primaryColor, secondaryColor, accentColor, accentDarkColor, backgroundColor, secondaryLightColor, isDark, createdAt, updatedAt) \nVALUES ('black-friday', 'Black Friday', '#000000', '#1a1a1a', '#FFF9E6', '#FFE8B3', '#FFFBF0', '#F5F5DC', 1, NOW(), NOW())\nON DUPLICATE KEY UPDATE \n  primaryColor = '#000000',\n  secondaryColor = '#1a1a1a', \n  accentColor = '#FFF9E6',\n  accentDarkColor = '#FFE8B3',\n  backgroundColor = '#FFFBF0',\n  secondaryLightColor = '#F5F5DC',\n  isDark = 1,\n  updatedAt = NOW();",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute INSERT INTO color_schemes (slug, name, primaryColor, secondaryColor, accentColor, accentDarkColor, backgroundColor, secondaryLightColor, isDark, createdAt, updatedAt) \nVALUES ('black-friday', 'Black Friday', '#000000', '#1a1a1a', '#FFF9E6', '#FFE8B3', '#FFFBF0', '#F5F5DC', 1, NOW(), NOW())\nON DUPLICATE KEY UPDATE \n  primaryColor = '#000000',\n  secondaryColor = '#1a1a1a', \n  accentColor = '#FFF9E6',\n  accentDarkColor = '#FFE8B3',\n  backgroundColor = '#FFFBF0',\n  secondaryLightColor = '#F5F5DC',\n  isDark = 1,\n  updatedAt = NOW();",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 368
+}

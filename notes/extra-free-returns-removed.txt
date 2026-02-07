@@ -1,0 +1,15 @@
+Key Finding: Extra "Free Returns" Text Removed
+
+From the screenshot, I can confirm:
+1. The shipping message now shows: "Ships to Brazil · 5-8 days" (no extra "Free Returns" in blue)
+2. The trust badges correctly show: "100-Night Guarantee", "Free Returns", "Award-Winning Quality"
+
+The extra "Free Returns" text that was appearing in blue has been removed from:
+- ShippingMessage inline variant (line 71)
+- ShippingMessage badge variant (line 88)
+- ShippingMessage checkout variant (line 121)
+- Home.tsx Choose Your Setup section (removed the extra ShippingMessage badge component)
+
+Now the non-US visitors see:
+- Shipping message: "Ships to [Country] · [delivery time]" (no extra badge text)
+- Trust badges: "Free Returns" and "Award-Winning Quality" (replacing "Free Shipping" and "Made in USA")

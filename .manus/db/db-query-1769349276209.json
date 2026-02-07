@@ -1,0 +1,9 @@
+{
+  "query": "INSERT INTO cta_buttons (text, createdAt, updatedAt) \nSELECT 'Claim Deal', NOW(), NOW()\nWHERE NOT EXISTS (SELECT 1 FROM cta_buttons WHERE text = 'Claim Deal');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute INSERT INTO cta_buttons (text, createdAt, updatedAt) \nSELECT 'Claim Deal', NOW(), NOW()\nWHERE NOT EXISTS (SELECT 1 FROM cta_buttons WHERE text = 'Claim Deal');",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 74
+}

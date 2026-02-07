@@ -1,0 +1,35 @@
+{
+  "query": "SELECT id, text, secondaryText FROM cta_buttons;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, text, secondaryText FROM cta_buttons;",
+  "rows": [
+    {
+      "id": "1",
+      "text": "Order Now",
+      "secondaryText": "& Save {discount}%"
+    },
+    {
+      "id": "2",
+      "text": "Gift Now",
+      "secondaryText": "& Save {discount}%"
+    },
+    {
+      "id": "3",
+      "text": "Get Hotel Quality",
+      "secondaryText": "& Save {discount}%"
+    },
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "secondaryText": "& Save {discount}%"
+    },
+    {
+      "id": "5",
+      "text": "End Your Pillow Battle",
+      "secondaryText": "& Save {discount}%"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tsecondaryText\n1\tOrder Now\t& Save {discount}%\n2\tGift Now\t& Save {discount}%\n3\tGet Hotel Quality\t& Save {discount}%\n4\tClaim Now\t& Save {discount}%\n5\tEnd Your Pillow Battle\t& Save {discount}%\n",
+  "stderr": "",
+  "execution_time_ms": 364
+}

@@ -1,0 +1,16 @@
+{
+  "query": "SELECT pageId, angleId, ctaButtonId, eventEndDate FROM landing_page_settings WHERE pageId = 'valentine';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId, angleId, ctaButtonId, eventEndDate FROM landing_page_settings WHERE pageId = 'valentine';",
+  "rows": [
+    {
+      "pageId": "valentine",
+      "angleId": "4",
+      "ctaButtonId": "2",
+      "eventEndDate": "2026-02-14"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tangleId\tctaButtonId\teventEndDate\nvalentine\t4\t2\t2026-02-14\n",
+  "stderr": "",
+  "execution_time_ms": 455
+}

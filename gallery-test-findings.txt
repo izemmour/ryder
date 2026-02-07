@@ -1,0 +1,39 @@
+Gallery Test Findings - Mother's Day Page
+==========================================
+
+Date: 2026-01-22
+
+Issue Found:
+- Mother's Day page is showing a gift box image with pink ribbon and flowers
+- This is NOT the standard hero-pillow.png image
+- The config has been updated to use standard images but the page is still showing old images
+
+Root Cause:
+- The UseCasePage component is still using the old gallery rendering code
+- It reads from config.gallery.images array directly
+- The config was updated but the page component still renders the old way
+
+Thumbnails visible (from screenshot):
+- Thumbnail 12: "5-star" (hero pillow)
+- Thumbnail 13: (lifestyle image - no tag visible)
+- Thumbnail 14: (engineering detail - no tag visible)
+- Thumbnail 15: "VS" (comparison)
+- Thumbnail 16: "care" (washing machine)
+- Thumbnail 17: "FLUFFCo vs hotels" (hotel comparison)
+- Thumbnail 18: "hotel" (packaging)
+
+Solution Needed:
+- Update UseCasePage to use the new ProductGallery component
+- OR update UseCasePage to read from config.gallery.images correctly
+
+Current config.gallery.images (from mothers-day.config.ts):
+1. /images/hero-pillow.png (standard)
+2. /images/lifestyle-sleep.png (standard)
+3. /images/engineering-detail-new.png (standard)
+4. comparison (component)
+5. /images/washing-machine.png (standard)
+6. /images/hotel-comfort-packaging.png (standard)
+7. hotel-comparison (component)
+
+The main image showing is valentine-unboxing.png which is NOT in the config.
+This suggests the UseCasePage has hardcoded images or is reading from a different source.

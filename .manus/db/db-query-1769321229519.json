@@ -1,0 +1,52 @@
+{
+  "query": "SELECT id, text, secondaryText, alternativeText, isDefault FROM cta_buttons ORDER BY id;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, text, secondaryText, alternativeText, isDefault FROM cta_buttons ORDER BY id;",
+  "rows": [
+    {
+      "id": "1",
+      "text": "Order Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Shop Now",
+      "isDefault": "1"
+    },
+    {
+      "id": "2",
+      "text": "Gift Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Send a Gift",
+      "isDefault": "0"
+    },
+    {
+      "id": "3",
+      "text": "Get Hotel Quality",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Order Now",
+      "isDefault": "0"
+    },
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Yours",
+      "isDefault": "0"
+    },
+    {
+      "id": "5",
+      "text": "End Your Pillow Battle",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Relief",
+      "isDefault": "0"
+    },
+    {
+      "id": "30001",
+      "text": "Claim 66% Off",
+      "secondaryText": "Claim 66% Off & Save $294",
+      "alternativeText": "Claim Your Black Friday Deal",
+      "isDefault": "0"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tsecondaryText\talternativeText\tisDefault\n1\tOrder Now\t& Save {discount}%\tShop Now\t1\n2\tGift Now\t& Save {discount}%\tSend a Gift\t0\n3\tGet Hotel Quality\t& Save {discount}%\tOrder Now\t0\n4\tClaim Now\t& Save {discount}%\tGet Yours\t0\n5\tEnd Your Pillow Battle\t& Save {discount}%\tGet Relief\t0\n30001\tClaim 66% Off\tClaim 66% Off & Save $294\tClaim Your Black Friday Deal\t0\n",
+  "stderr": "",
+  "execution_time_ms": 417
+}

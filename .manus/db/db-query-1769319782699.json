@@ -1,0 +1,17 @@
+{
+  "query": "SELECT lps.id, lps.pageId, lps.ctaButtonId, cb.id as cta_id, cb.text as cta_text \nFROM landing_page_settings lps \nLEFT JOIN cta_buttons cb ON lps.ctaButtonId = cb.id \nWHERE lps.pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT lps.id, lps.pageId, lps.ctaButtonId, cb.id as cta_id, cb.text as cta_text \nFROM landing_page_settings lps \nLEFT JOIN cta_buttons cb ON lps.ctaButtonId = cb.id \nWHERE lps.pageId = 'black-friday';",
+  "rows": [
+    {
+      "id": "4",
+      "pageId": "black-friday",
+      "ctaButtonId": "6",
+      "cta_id": "NULL",
+      "cta_text": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tpageId\tctaButtonId\tcta_id\tcta_text\n4\tblack-friday\t6\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 347
+}

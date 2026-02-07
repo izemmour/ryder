@@ -1,0 +1,34 @@
+{
+  "query": "SELECT id, slug, name, description FROM marketing_angles WHERE isActive = 1;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, slug, name, description FROM marketing_angles WHERE isActive = 1;",
+  "rows": [
+    {
+      "id": "1",
+      "slug": "restorative-alignment",
+      "name": "Restorative Alignment",
+      "description": "Wake up pain-free with proper cervical support and spinal alignment"
+    },
+    {
+      "id": "2",
+      "slug": "hotel-quality",
+      "name": "Hotel Quality",
+      "description": "Sleep like you're on vacation every night with luxury hotel-quality comfort"
+    },
+    {
+      "id": "3",
+      "slug": "neck-pain-relief",
+      "name": "Neck Pain Relief",
+      "description": "Say goodbye to morning neck stiffness with targeted orthopedic support"
+    },
+    {
+      "id": "4",
+      "slug": "gift-angle",
+      "name": "Gift Angle",
+      "description": "Give the gift of restful nights and pain-free mornings"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tslug\tname\tdescription\n1\trestorative-alignment\tRestorative Alignment\tWake up pain-free with proper cervical support and spinal alignment\n2\thotel-quality\tHotel Quality\tSleep like you're on vacation every night with luxury hotel-quality comfort\n3\tneck-pain-relief\tNeck Pain Relief\tSay goodbye to morning neck stiffness with targeted orthopedic support\n4\tgift-angle\tGift Angle\tGive the gift of restful nights and pain-free mornings\n",
+  "stderr": "",
+  "execution_time_ms": 350
+}

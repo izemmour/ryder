@@ -1,0 +1,18 @@
+Key Finding: Trust Badges Now Working for Non-US Visitors
+
+From the screenshot, I can see the trust badges now correctly show:
+- "100-Night Guarantee" (unchanged)
+- "Free Returns" (instead of "Free Shipping" for non-US)
+- "Award-Winning Quality" (instead of "Made in USA" for non-US)
+
+The shipping message also shows:
+- "Ships to Brazil · Free Returns · 5-8 days"
+
+This confirms the useSiteSettings hook is now correctly overriding:
+- shipping_text with nonUsBadgeText for non-US visitors
+- origin_text with nonUsAlternativeUspTitle for non-US visitors
+
+The fix was made by updating useSiteSettings.ts to:
+1. Import useGeolocation and isUSVisitor
+2. Check if visitor is from US
+3. Override shipping_text and origin_text for non-US visitors

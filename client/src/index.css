@@ -1,0 +1,627 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * COWBOY-INSPIRED DESIGN SYSTEM
+ * - Warm off-white backgrounds
+ * - Clean sans-serif typography
+ * - Minimal, confident aesthetic
+ * - Product photography as hero
+ * - Monochromatic with subtle accents
+ */
+
+@theme inline {
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  /* Cowboy-inspired warm, clean palette */
+  --primary: oklch(0.25 0.01 250); /* Near black for text/buttons */
+  --primary-foreground: oklch(0.98 0.005 90); /* Off-white */
+  --accent: oklch(0.55 0.20 25); /* Warm coral/red for CTAs */
+  --accent-foreground: oklch(0.98 0.005 90);
+  
+  --sidebar-primary: oklch(0.25 0.01 250);
+  --sidebar-primary-foreground: oklch(0.98 0.005 90);
+  --chart-1: oklch(0.55 0.20 25);
+  --chart-2: oklch(0.45 0.15 250);
+  --chart-3: oklch(0.55 0.10 250);
+  --chart-4: oklch(0.65 0.08 250);
+  --chart-5: oklch(0.75 0.05 250);
+  --radius: 0.5rem;
+  
+  /* Warm off-white background like Cowboy */
+  --background: oklch(0.97 0.005 90); /* Warm cream #f5f5f0 */
+  --foreground: oklch(0.15 0.01 250); /* Near black */
+  --card: oklch(1 0 0); /* Pure white for cards */
+  --card-foreground: oklch(0.15 0.01 250);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.15 0.01 250);
+  --secondary: oklch(0.92 0.005 90); /* Slightly darker cream */
+  --secondary-foreground: oklch(0.15 0.01 250);
+  --muted: oklch(0.94 0.005 90);
+  --muted-foreground: oklch(0.45 0.01 250);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0.005 90);
+  --border: oklch(0.88 0.005 90);
+  --input: oklch(0.88 0.005 90);
+  --ring: oklch(0.25 0.01 250);
+  --sidebar: oklch(0.97 0.005 90);
+  --sidebar-foreground: oklch(0.15 0.01 250);
+  --sidebar-accent: oklch(0.92 0.005 90);
+  --sidebar-accent-foreground: oklch(0.15 0.01 250);
+  --sidebar-border: oklch(0.88 0.005 90);
+  --sidebar-ring: oklch(0.25 0.01 250);
+}
+
+.dark {
+  --primary: oklch(0.98 0.005 90);
+  --primary-foreground: oklch(0.15 0.01 250);
+  --sidebar-primary: oklch(0.98 0.005 90);
+  --sidebar-primary-foreground: oklch(0.15 0.01 250);
+  --background: oklch(0.12 0.01 250);
+  --foreground: oklch(0.95 0.005 90);
+  --card: oklch(0.18 0.01 250);
+  --card-foreground: oklch(0.95 0.005 90);
+  --popover: oklch(0.18 0.01 250);
+  --popover-foreground: oklch(0.95 0.005 90);
+  --secondary: oklch(0.22 0.01 250);
+  --secondary-foreground: oklch(0.95 0.005 90);
+  --muted: oklch(0.25 0.01 250);
+  --muted-foreground: oklch(0.65 0.005 90);
+  --accent: oklch(0.55 0.20 25);
+  --accent-foreground: oklch(0.98 0.005 90);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0.005 90);
+  --border: oklch(0.28 0.01 250);
+  --input: oklch(0.28 0.01 250);
+  --ring: oklch(0.98 0.005 90);
+  --chart-1: oklch(0.55 0.20 25);
+  --chart-2: oklch(0.45 0.15 250);
+  --chart-3: oklch(0.55 0.10 250);
+  --chart-4: oklch(0.65 0.08 250);
+  --chart-5: oklch(0.75 0.05 250);
+  --sidebar: oklch(0.18 0.01 250);
+  --sidebar-foreground: oklch(0.95 0.005 90);
+  --sidebar-accent: oklch(0.25 0.01 250);
+  --sidebar-accent-foreground: oklch(0.95 0.005 90);
+  --sidebar-border: oklch(0.28 0.01 250);
+  --sidebar-ring: oklch(0.98 0.005 90);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    max-width: 100%;
+    width: 100%;
+  }
+  body {
+    @apply overflow-x-hidden bg-background text-foreground font-sans antialiased;
+    max-width: 100%;
+    width: 100%;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-semibold tracking-tight;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+  
+  /* Feature pill/chip style like Cowboy */
+  .feature-pill {
+    @apply inline-flex items-center px-3 py-1.5 text-sm bg-secondary rounded-full;
+  }
+  
+  /* ===== UNIFIED CTA BUTTON SYSTEM ===== */
+  
+  /* Primary CTA - Filled with subtle glow on hover (premium feel) */
+  .cta-primary {
+    @apply bg-[#e63946] text-white font-medium px-8 py-4 rounded-full transition-all duration-200;
+    box-shadow: 0 1px 4px rgba(230, 57, 70, 0.15);
+  }
+  .cta-primary:hover {
+    @apply bg-[#d62839];
+    box-shadow: 0 2px 10px rgba(230, 57, 70, 0.25);
+    transform: translateY(-0.5px);
+  }
+  .cta-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 4px rgba(230, 57, 70, 0.15);
+  }
+  
+  /* Secondary CTA - Dark filled (premium subtle hover) */
+  .cta-secondary {
+    @apply bg-primary text-primary-foreground font-medium px-6 py-3 rounded-full transition-all duration-200;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  .cta-secondary:hover {
+    @apply opacity-95;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-0.5px);
+  }
+  .cta-secondary:active {
+    transform: translateY(0);
+  }
+  
+  /* Outline CTA - Border only, fills on hover */
+  .cta-outline {
+    @apply bg-transparent font-medium px-6 py-3 rounded-full transition-all duration-300;
+    border: 2px solid currentColor;
+  }
+  .cta-outline:hover {
+    @apply text-white;
+    background-color: currentColor;
+    transform: translateY(-1px);
+  }
+  .cta-outline:active {
+    transform: translateY(0);
+  }
+  
+  /* Event-specific CTA classes - use CSS variables for dynamic colors */
+  .cta-event-primary {
+    @apply font-medium px-8 py-4 rounded-full transition-all duration-300 text-white;
+    background-color: var(--event-primary, #e63946);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--event-primary, #e63946) 35%, transparent);
+  }
+  .cta-event-primary:hover {
+    box-shadow: 0 4px 20px color-mix(in srgb, var(--event-primary, #e63946) 55%, transparent);
+    transform: translateY(-1px);
+    filter: brightness(0.95);
+  }
+  .cta-event-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--event-primary, #e63946) 35%, transparent);
+  }
+  
+  /* Event outline CTA - fills with event color on hover */
+  .cta-event-outline {
+    @apply font-medium px-6 py-3 rounded-full transition-all duration-300;
+    background-color: transparent;
+    border: 2px solid var(--event-primary, #e63946);
+    color: var(--event-primary, #e63946);
+  }
+  .cta-event-outline:hover {
+    background-color: var(--event-primary, #e63946);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px color-mix(in srgb, var(--event-primary, #e63946) 40%, transparent);
+  }
+  .cta-event-outline:active {
+    transform: translateY(0);
+  }
+}
+
+/*
+ * Container overrides - placed AFTER @layer to override Tailwind's built-in container
+ * Tailwind 4 has built-in container styles in @layer utilities that set max-width at breakpoints
+ * We need to override these with higher specificity styles outside of @layer
+ * 
+ * Mobile: No padding here - let individual sections control their own padding via Tailwind classes
+ * Tablet: Fluid padding with no max-width constraint for seamless desktop transition
+ * Desktop: Constrained max-width for readability
+ */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* Mobile: No padding here - let Tailwind classes control padding per section */
+  /* This allows px-0 to work for edge-to-edge sections like hero gallery */
+}
+
+/* 
+ * Tablet breakpoint (768px - 1279px): Full width, fluid padding
+ * Override Tailwind's max-width: 48rem at this breakpoint
+ */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    max-width: none !important;
+    padding-left: clamp(1.5rem, 4vw, 3rem);
+    padding-right: clamp(1.5rem, 4vw, 3rem);
+  }
+}
+
+/* Large desktop (1280px+): constrained max-width for readability */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Infinite scroll animation for press logos */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 25s linear infinite;
+}
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Marquee animation for press logos - moves exactly one set width */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Mobile: 15% faster marquee animation (30s * 0.85 = 25.5s) */
+@media (max-width: 767px) {
+  .animate-marquee {
+    animation: marquee 25.5s linear infinite;
+  }
+}
+
+/* Fade slide in animation for overlay badges */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-in {
+  animation: fadeSlideIn 0.4s ease-out forwards;
+}
+
+/* Smooth fade-in-up animation for award carousel transitions */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+/* Slide in from bottom animation for cards */
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hide scrollbar for thumbnail containers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+/* Shimmer animation for inventory bar */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+
+/* Gallery image loading skeleton with shimmer effect */
+@keyframes galleryShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gallery-skeleton {
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--secondary)) 0%,
+    hsl(var(--muted)) 20%,
+    hsl(var(--secondary)) 40%,
+    hsl(var(--secondary)) 100%
+  );
+  background-size: 200% 100%;
+  animation: galleryShimmer 1.5s ease-in-out infinite;
+}
+
+/* Pillow icon placeholder for gallery loading */
+.gallery-skeleton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 50px;
+  background: hsl(var(--muted-foreground) / 0.15);
+  border-radius: 12px;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M20 9.5V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2.5c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-2-2.5v2H6V7h12zm2 9.5H4v-5h2v1.5c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V11.5h2v5z'/%3E%3C/svg%3E");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M20 9.5V7c0-1.1-.9-2-2-2H6c-1.1 0-2 .9-2 2v2.5c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-2-2.5v2H6V7h12zm2 9.5H4v-5h2v1.5c0 .55.45 1 1 1h10c.55 0 1-.45 1-1V11.5h2v5z'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}
+
+/* Pulsing loading indicator */
+.gallery-skeleton::after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+/* Loading dots animation */
+@keyframes loadingDots {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Toast notification animation - slide in, stay, then fade out */
+@keyframes toastInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.animate-toast-in-out {
+  animation: toastInOut 5s ease-in-out forwards;
+}
+
+/* Subtle single pulse glow animation for 30 Nights Trial badge */
+@keyframes pulseGlowOnce {
+  0% {
+    filter: drop-shadow(0 0 0 rgba(245, 197, 66, 0));
+  }
+  30% {
+    filter: drop-shadow(0 0 12px rgba(245, 197, 66, 0.5)) drop-shadow(0 0 20px rgba(245, 197, 66, 0.3));
+  }
+  60% {
+    filter: drop-shadow(0 0 8px rgba(245, 197, 66, 0.35)) drop-shadow(0 0 15px rgba(245, 197, 66, 0.2));
+  }
+  100% {
+    filter: drop-shadow(0 0 0 rgba(245, 197, 66, 0));
+  }
+}
+
+.animate-pulse-glow-once {
+  animation: pulseGlowOnce 2s ease-in-out 1;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+/* Subtle shimmer animation for CTA buttons */
+@keyframes ctaShimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-cta-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-cta-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 25%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.08) 75%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: ctaShimmer 4s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+
+/* Slide in from right animation for carousel cards */
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide in from left animation for carousel cards (reverse swipe) */
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth slide-in animation for pricing numbers with subtle bounce */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scroll behavior for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Slide up animation for popup modals */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* LCP Optimization: content-visibility for below-fold sections */
+/* This tells the browser to skip rendering off-screen content initially */
+section:not(:first-of-type) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 500px;
+}
+
+/* Ensure hero section renders immediately without delay */
+[data-hero-section] {
+  content-visibility: visible;
+  contain: none;
+}
+
+/* Reduce paint complexity for non-critical elements */
+[data-below-fold] {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 300px;
+}

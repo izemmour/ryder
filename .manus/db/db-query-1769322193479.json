@@ -1,0 +1,28 @@
+{
+  "query": "SELECT id, text, secondaryText, alternativeText FROM cta_buttons WHERE text LIKE '%Claim%' OR text LIKE '%66%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT id, text, secondaryText, alternativeText FROM cta_buttons WHERE text LIKE '%Claim%' OR text LIKE '%66%';",
+  "rows": [
+    {
+      "id": "4",
+      "text": "Claim Now",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Get Yours"
+    },
+    {
+      "id": "30001",
+      "text": "Claim 66% Off",
+      "secondaryText": "Claim 66% Off & Save $294",
+      "alternativeText": "Claim Your Black Friday Deal"
+    },
+    {
+      "id": "30002",
+      "text": "Claim 66% Off",
+      "secondaryText": "& Save {discount}%",
+      "alternativeText": "Shop Now"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\ttext\tsecondaryText\talternativeText\n4\tClaim Now\t& Save {discount}%\tGet Yours\n30001\tClaim 66% Off\tClaim 66% Off & Save $294\tClaim Your Black Friday Deal\n30002\tClaim 66% Off\t& Save {discount}%\tShop Now\n",
+  "stderr": "",
+  "execution_time_ms": 417
+}

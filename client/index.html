@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Down Alternative Pillow – FluffCo</title>    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+    <link rel="apple-touch-icon" href="/favicon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+    
+    <!-- Preload critical hero images for faster LCP (with 600w variant) -->
+    <link rel="preload" as="image" href="/images/optimized/hero/hero-pillow.webp" type="image/webp" fetchpriority="high" imagesrcset="/images/optimized/hero/responsive/hero-pillow-400.webp 400w, /images/optimized/hero/responsive/hero-pillow-600.webp 600w, /images/optimized/hero/responsive/hero-pillow-800.webp 800w, /images/optimized/hero/hero-pillow.webp 1200w" imagesizes="(max-width: 480px) 400px, (max-width: 768px) 600px, 1200px" />
+    
+    <!-- Preconnect for faster third-party resource loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preconnect" href="https://www.clarity.ms" crossorigin />
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin />
+    <link rel="preconnect" href="https://plausible.io" crossorigin />
+    
+    <!-- DNS prefetch fallback -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.clarity.ms" />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+    <link rel="dns-prefetch" href="https://plausible.io" />
+    
+    <!-- Microsoft Clarity (deferred for performance) -->
+    <script type="text/javascript" defer>
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "v46i6m0cs6");
+    </script>
+    
+  </head>
+
+  <body>
+    <!-- Facebook Pixel noscript fallback -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=395974164825127&ev=PageView&noscript=1"/>
+    </noscript>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Google Analytics 4 (deferred for performance - moved from head) -->
+    <script defer>
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-MV4DEJ21RH';
+        script.async = true;
+        document.head.appendChild(script);
+        script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
+          gtag('js', new Date());
+          gtag('config', 'G-MV4DEJ21RH');
+        };
+      });
+    </script>
+    
+    <!-- Facebook Pixel (deferred for performance) -->
+    <script defer>
+      window.addEventListener('load', function() {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        // Wait for fbevents.js to load before calling fbq
+        window.fbq('init', '395974164825127');
+        window.fbq('track', 'PageView');
+      });
+    </script>
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+  </body>
+
+</html>

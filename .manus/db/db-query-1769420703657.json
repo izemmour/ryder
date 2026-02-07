@@ -1,0 +1,140 @@
+{
+  "query": "SELECT * FROM site_settings;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT * FROM site_settings;",
+  "rows": [
+    {
+      "id": "1",
+      "key": "shipping_time_us",
+      "value": "4–6 days",
+      "label": "US Shipping Time",
+      "description": "Delivery estimate for US customers",
+      "category": "shipping",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "2",
+      "key": "shipping_time_ca",
+      "value": "6–10 days",
+      "label": "Canada Shipping Time",
+      "description": "Delivery estimate for Canadian customers",
+      "category": "shipping",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "3",
+      "key": "shipping_time_eu",
+      "value": "8–14 days",
+      "label": "Europe Shipping Time",
+      "description": "Delivery estimate for European customers",
+      "category": "shipping",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "4",
+      "key": "shipping_time_au",
+      "value": "12–18 days",
+      "label": "Australia/NZ Shipping Time",
+      "description": "Delivery estimate for Australia/NZ customers",
+      "category": "shipping",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "5",
+      "key": "shipping_time_row",
+      "value": "12–22 days",
+      "label": "Rest of World Shipping Time",
+      "description": "Delivery estimate for other countries",
+      "category": "shipping",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "6",
+      "key": "customer_count_base",
+      "value": "746000",
+      "label": "Customer Count Base",
+      "description": "Base number of happy customers (increments weekly)",
+      "category": "social_proof",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 09:02:46"
+    },
+    {
+      "id": "7",
+      "key": "customer_count_start_date",
+      "value": "2026-01-20",
+      "label": "Customer Count Start Date",
+      "description": "Date when the customer count base was set (YYYY-MM-DD)",
+      "category": "social_proof",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "8",
+      "key": "customer_count_weekly_increment",
+      "value": "4000",
+      "label": "Weekly Customer Increment",
+      "description": "Number of customers added each Monday",
+      "category": "social_proof",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "9",
+      "key": "trial_period_text",
+      "value": "100 Night Better Sleep",
+      "label": "Trial Period Text",
+      "description": "Text displayed for the trial period (e.g., \"30-Night Trial\")",
+      "category": "product",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-26 09:44:45"
+    },
+    {
+      "id": "10",
+      "key": "guarantee_text",
+      "value": "100-Night Guarantee",
+      "label": "Guarantee Text",
+      "description": "Text displayed for the money-back guarantee",
+      "category": "product",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-26 09:44:45"
+    },
+    {
+      "id": "11",
+      "key": "shipping_text",
+      "value": "Free Shipping",
+      "label": "Shipping Text",
+      "description": "Text displayed for shipping (e.g., \"Free Shipping\")",
+      "category": "product",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "12",
+      "key": "origin_text",
+      "value": "Made in USA",
+      "label": "Origin Text",
+      "description": "Text displayed for product origin",
+      "category": "product",
+      "createdAt": "2026-01-22 07:57:56",
+      "updatedAt": "2026-01-22 07:57:56"
+    },
+    {
+      "id": "30001",
+      "key": "shipping_time_default",
+      "value": "8-14 business days",
+      "label": "NULL",
+      "description": "NULL",
+      "category": "NULL",
+      "createdAt": "2026-01-24 09:20:00",
+      "updatedAt": "2026-01-24 09:20:00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tkey\tvalue\tlabel\tdescription\tcategory\tcreatedAt\tupdatedAt\n1\tshipping_time_us\t4–6 days\tUS Shipping Time\tDelivery estimate for US customers\tshipping\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n2\tshipping_time_ca\t6–10 days\tCanada Shipping Time\tDelivery estimate for Canadian customers\tshipping\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n3\tshipping_time_eu\t8–14 days\tEurope Shipping Time\tDelivery estimate for European customers\tshipping\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n4\tshipping_time_au\t12–18 days\tAustralia/NZ Shipping Time\tDelivery estimate for Australia/NZ customers\tshipping\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n5\tshipping_time_row\t12–22 days\tRest of World Shipping Time\tDelivery estimate for other countries\tshipping\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n6\tcustomer_count_base\t746000\tCustomer Count Base\tBase number of happy customers (increments weekly)\tsocial_proof\t2026-01-22 07:57:56\t2026-01-22 09:02:46\n7\tcustomer_count_start_date\t2026-01-20\tCustomer Count Start Date\tDate when the customer count base was set (YYYY-MM-DD)\tsocial_proof\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n8\tcustomer_count_weekly_increment\t4000\tWeekly Customer Increment\tNumber of customers added each Monday\tsocial_proof\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n9\ttrial_period_text\t100 Night Better Sleep\tTrial Period Text\tText displayed for the trial period (e.g., \"30-Night Trial\")\tproduct\t2026-01-22 07:57:56\t2026-01-26 09:44:45\n10\tguarantee_text\t100-Night Guarantee\tGuarantee Text\tText displayed for the money-back guarantee\tproduct\t2026-01-22 07:57:56\t2026-01-26 09:44:45\n11\tshipping_text\tFree Shipping\tShipping Text\tText displayed for shipping (e.g., \"Free Shipping\")\tproduct\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n12\torigin_text\tMade in USA\tOrigin Text\tText displayed for product origin\tproduct\t2026-01-22 07:57:56\t2026-01-22 07:57:56\n30001\tshipping_time_default\t8-14 business days\tNULL\tNULL\tNULL\t2026-01-24 09:20:00\t2026-01-24 09:20:00\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

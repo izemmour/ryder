@@ -1,0 +1,18 @@
+{
+  "query": "SELECT \n  lps.pageId,\n  lps.colorScheme,\n  cs.id as color_scheme_id,\n  cs.name as color_scheme_name,\n  cs.primaryColor,\n  cs.secondaryColor\nFROM landing_page_settings lps\nLEFT JOIN color_schemes cs ON lps.colorScheme = cs.slug\nWHERE lps.pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT \n  lps.pageId,\n  lps.colorScheme,\n  cs.id as color_scheme_id,\n  cs.name as color_scheme_name,\n  cs.primaryColor,\n  cs.secondaryColor\nFROM landing_page_settings lps\nLEFT JOIN color_schemes cs ON lps.colorScheme = cs.slug\nWHERE lps.pageId = 'black-friday';",
+  "rows": [
+    {
+      "pageId": "black-friday",
+      "colorScheme": "NULL",
+      "color_scheme_id": "NULL",
+      "color_scheme_name": "NULL",
+      "primaryColor": "NULL",
+      "secondaryColor": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tcolorScheme\tcolor_scheme_id\tcolor_scheme_name\tprimaryColor\tsecondaryColor\nblack-friday\tNULL\tNULL\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 356
+}

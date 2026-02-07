@@ -1,0 +1,14 @@
+{
+  "query": "SELECT pageId, ctaButtonId FROM landing_page_settings WHERE pageId = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT pageId, ctaButtonId FROM landing_page_settings WHERE pageId = 'black-friday';",
+  "rows": [
+    {
+      "pageId": "black-friday",
+      "ctaButtonId": "30002"
+    }
+  ],
+  "messages": [],
+  "stdout": "pageId\tctaButtonId\nblack-friday\t30002\n",
+  "stderr": "",
+  "execution_time_ms": 354
+}

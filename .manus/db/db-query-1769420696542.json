@@ -1,0 +1,18 @@
+{
+  "query": "SELECT `key`, `value` FROM site_settings WHERE `key` IN ('trial_period_text', 'guarantee_text');",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT `key`, `value` FROM site_settings WHERE `key` IN ('trial_period_text', 'guarantee_text');",
+  "rows": [
+    {
+      "key": "trial_period_text",
+      "value": "100 Night Better Sleep"
+    },
+    {
+      "key": "guarantee_text",
+      "value": "100-Night Guarantee"
+    }
+  ],
+  "messages": [],
+  "stdout": "key\tvalue\ntrial_period_text\t100 Night Better Sleep\nguarantee_text\t100-Night Guarantee\n",
+  "stderr": "",
+  "execution_time_ms": 53
+}

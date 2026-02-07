@@ -1,0 +1,8 @@
+{
+  "query": "SELECT \n  lps.page_id,\n  lps.page_type,\n  lps.marketing_angle_id,\n  ma.name as marketing_angle_name,\n  lps.color_scheme_id,\n  cs.name as color_scheme_name,\n  lps.cta_button_id,\n  cb.primary_text as cta_primary_text\nFROM landing_page_settings lps\nLEFT JOIN marketing_angles ma ON lps.marketing_angle_id = ma.id\nLEFT JOIN color_schemes cs ON lps.color_scheme_id = cs.id\nLEFT JOIN cta_buttons cb ON lps.cta_button_id = cb.id\nWHERE lps.page_id = 'black-friday';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user CNKdwDCmXxkMRsi.root --database HGQz9dLDHpFFWknD7bvAQD --execute SELECT \n  lps.page_id,\n  lps.page_type,\n  lps.marketing_angle_id,\n  ma.name as marketing_angle_name,\n  lps.color_scheme_id,\n  cs.name as color_scheme_name,\n  lps.cta_button_id,\n  cb.primary_text as cta_primary_text\nFROM landing_page_settings lps\nLEFT JOIN marketing_angles ma ON lps.marketing_angle_id = ma.id\nLEFT JOIN color_schemes cs ON lps.color_scheme_id = cs.id\nLEFT JOIN cta_buttons cb ON lps.cta_button_id = cb.id\nWHERE lps.page_id = 'black-friday';",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'lps.marketing_angle_id' in 'on clause'"
+  ]
+}
